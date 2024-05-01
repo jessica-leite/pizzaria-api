@@ -14,7 +14,7 @@ public class Pizza {
     private String nome;
 
     @Column
-    private float precoBase;
+    private double precoBase;
 
     private boolean personalizada;
 
@@ -34,7 +34,7 @@ public class Pizza {
         this.nome = nome;
     }
 
-    public float getPrecoBase() {
+    public double getPrecoBase() {
         return precoBase;
     }
 
