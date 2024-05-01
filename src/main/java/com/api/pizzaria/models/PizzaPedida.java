@@ -8,7 +8,7 @@ public class PizzaPedida {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column
     private int quantidade;
@@ -20,6 +20,10 @@ public class PizzaPedida {
     @ManyToOne
     @JoinColumn(name = "pizzaId")
     private Pizza pizza;
+
+    @ManyToOne
+    @JoinColumn(name = "tamanhoId")
+    private Tamanho tamanho;
 
     public long getId() {
         return id;
