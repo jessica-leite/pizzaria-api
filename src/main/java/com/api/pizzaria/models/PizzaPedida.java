@@ -25,6 +25,14 @@ public class PizzaPedida {
     @JoinColumn(name = "tamanhoId")
     private Tamanho tamanho;
 
+    public Tamanho getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(Tamanho tamanho) {
+        this.tamanho = tamanho;
+    }
+
     public long getId() {
         return id;
     }
